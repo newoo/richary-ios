@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,7 @@
 		51BAEEB304644A9882E3DB2C /* Pods_richaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 630DDF013D47841E50C18290 /* Pods_richaryTests.framework */; };
 		5361066F25C6F079007AB7D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5361066E25C6F079007AB7D0 /* AppDelegate.swift */; };
 		5361067125C6F079007AB7D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5361067025C6F079007AB7D0 /* SceneDelegate.swift */; };
-		5361067325C6F079007AB7D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5361067225C6F079007AB7D0 /* ViewController.swift */; };
+		5361067325C6F079007AB7D0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5361067225C6F079007AB7D0 /* MainViewController.swift */; };
 		5361067625C6F079007AB7D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5361067425C6F079007AB7D0 /* Main.storyboard */; };
 		5361067825C6F07A007AB7D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5361067725C6F07A007AB7D0 /* Assets.xcassets */; };
 		5361067B25C6F07A007AB7D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5361067925C6F07A007AB7D0 /* LaunchScreen.storyboard */; };
@@ -45,7 +45,7 @@
 		5361066B25C6F079007AB7D0 /* richary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = richary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5361066E25C6F079007AB7D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5361067025C6F079007AB7D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5361067225C6F079007AB7D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5361067225C6F079007AB7D0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5361067525C6F079007AB7D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5361067725C6F07A007AB7D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5361067A25C6F07A007AB7D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,7 +101,6 @@
 				44C4EC1F7EC8198EFA7F4DDC /* Pods-richaryTests.debug.xcconfig */,
 				4F353D0DE8068C719D6EFFEC /* Pods-richaryTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -132,7 +131,7 @@
 			children = (
 				5361066E25C6F079007AB7D0 /* AppDelegate.swift */,
 				5361067025C6F079007AB7D0 /* SceneDelegate.swift */,
-				5361067225C6F079007AB7D0 /* ViewController.swift */,
+				5361067225C6F079007AB7D0 /* MainViewController.swift */,
 				5361067425C6F079007AB7D0 /* Main.storyboard */,
 				5361067725C6F07A007AB7D0 /* Assets.xcassets */,
 				5361067925C6F07A007AB7D0 /* LaunchScreen.storyboard */,
@@ -425,7 +424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5361067325C6F079007AB7D0 /* ViewController.swift in Sources */,
+				5361067325C6F079007AB7D0 /* MainViewController.swift in Sources */,
 				5361066F25C6F079007AB7D0 /* AppDelegate.swift in Sources */,
 				5361067125C6F079007AB7D0 /* SceneDelegate.swift in Sources */,
 			);
