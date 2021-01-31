@@ -7,9 +7,13 @@
 
 import UIKit
 import SnapKit
+import RxSwift
+import RxCocoa
 
 class MainViewController: UIViewController {
     // MARK: - Properties
+    var disposeBag = DisposeBag()
+    
     lazy var currentDateLabel: UILabel = {
         let label = UILabel()
         view.addSubview(label)
@@ -21,14 +25,20 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setConstraints()
+        setBindings()
     }
     
-    // MARK: - Set Constraints
     private func setConstraints() {
         currentDateLabel.snp.makeConstraints({
             $0.top.equalTo(view.safeAreaLayoutGuide)
             $0.centerX.equalToSuperview()
         })
+    }
+    
+    private func setBindings() {
+        Driver.just(Date().toString(by: DateFormatter().dateFommat()))
+            .drive(currentDateLabel.rx.text)
+            .disposed(by: disposeBag)
     }
 }
 
