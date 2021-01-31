@@ -9,11 +9,22 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        if #available(iOS 13, *) {
+            return true
+        }
+        
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.backgroundColor = .white
+        window.makeKeyAndVisible()
+        
+        let mainViewController = MainViewController(reactor: MainReactor())
+        let navigationController = UINavigationController(rootViewController: mainViewController)
+        window.rootViewController = navigationController
+        self.window = window
+        
         return true
     }
 

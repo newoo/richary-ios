@@ -15,7 +15,7 @@ class MainViewControllerSpec: QuickSpec {
             var mainViewController: MainViewController!
 
             beforeEach {
-                mainViewController = MainViewController()
+                mainViewController = MainViewController() 
 
                 let navigationViewController = UINavigationController()
                 navigationViewController.addChild(mainViewController)
