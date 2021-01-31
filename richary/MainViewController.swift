@@ -6,14 +6,29 @@
 //
 
 import UIKit
+import SnapKit
 
 class MainViewController: UIViewController {
+    // MARK: - Properties
+    lazy var currentDateLabel: UILabel = {
+        let label = UILabel()
+        view.addSubview(label)
+        
+        return label
+    }()
 
+    // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setConstraints()
     }
-
-
+    
+    // MARK: - Set Constraints
+    private func setConstraints() {
+        currentDateLabel.snp.makeConstraints({
+            $0.top.equalTo(view.safeAreaLayoutGuide)
+            $0.centerX.equalToSuperview()
+        })
+    }
 }
 
