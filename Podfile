@@ -16,6 +16,8 @@ target 'richary' do
     # Pods for testing
     pod 'RxBlocking', '5.1.1'
     pod 'RxTest', '5.1.1'
+    pod 'Quick', '3.0.0'
+    pod 'Nimble', '9.0.0'
   end
 
   target 'richaryUITests' do
