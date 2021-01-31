@@ -15,7 +15,7 @@
 		5361067625C6F079007AB7D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5361067425C6F079007AB7D0 /* Main.storyboard */; };
 		5361067825C6F07A007AB7D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5361067725C6F07A007AB7D0 /* Assets.xcassets */; };
 		5361067B25C6F07A007AB7D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5361067925C6F07A007AB7D0 /* LaunchScreen.storyboard */; };
-		5361068625C6F07A007AB7D0 /* richaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5361068525C6F07A007AB7D0 /* richaryTests.swift */; };
+		5361068625C6F07A007AB7D0 /* MainViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5361068525C6F07A007AB7D0 /* MainViewControllerSpec.swift */; };
 		5361069125C6F07A007AB7D0 /* richaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5361069025C6F07A007AB7D0 /* richaryUITests.swift */; };
 		5E10461EE51CE0790865D7E3 /* Pods_richary_richaryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A564D9B07D03CF6974D1AB6 /* Pods_richary_richaryUITests.framework */; };
 /* End PBXBuildFile section */
@@ -51,7 +51,7 @@
 		5361067A25C6F07A007AB7D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5361067C25C6F07A007AB7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5361068125C6F07A007AB7D0 /* richaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = richaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5361068525C6F07A007AB7D0 /* richaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = richaryTests.swift; sourceTree = "<group>"; };
+		5361068525C6F07A007AB7D0 /* MainViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerSpec.swift; sourceTree = "<group>"; };
 		5361068725C6F07A007AB7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5361068C25C6F07A007AB7D0 /* richaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = richaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5361069025C6F07A007AB7D0 /* richaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = richaryUITests.swift; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 		5361068425C6F07A007AB7D0 /* richaryTests */ = {
 			isa = PBXGroup;
 			children = (
-				5361068525C6F07A007AB7D0 /* richaryTests.swift */,
+				5361068525C6F07A007AB7D0 /* MainViewControllerSpec.swift */,
 				5361068725C6F07A007AB7D0 /* Info.plist */,
 			);
 			path = richaryTests;
@@ -434,7 +434,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5361068625C6F07A007AB7D0 /* richaryTests.swift in Sources */,
+				5361068625C6F07A007AB7D0 /* MainViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,7 +532,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -587,7 +587,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
