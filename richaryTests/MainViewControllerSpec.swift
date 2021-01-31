@@ -31,7 +31,7 @@ class MainViewControllerSpec: QuickSpec {
                 it("show current date") {
                     let currentDateText = mainViewController.currentDateLabel.text
                     let expected = Date().toString(by: DateFormatter().dateFommat())
-                    expect(currentDateText).to(equal(expected))
+                    expect(currentDateText).toEventually(equal(expected))
                 }
             }
         }
